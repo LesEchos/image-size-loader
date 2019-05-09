@@ -48,8 +48,14 @@ export default function imageSizeLoader(content) {
     regExp: options.regExp,
   });
 
-  const image = sizeOf(this.resourcePath);
-  image.bytes = fs.statSync(this.resourcePath).size;
+  let image;
+  if (this.resourcePath) {
+      image = sizeOf(this.resourcePath);
+      image.bytes = fs.statSync(this.resourcePath).size;
+  } else {
+      image = sizeOf(content);
+      image.bytes = content.byteLength;
+  }
 
   let outputPath = url;
 
