@@ -50,11 +50,11 @@ export default function imageSizeLoader(content) {
 
   let image;
   if (this.resourcePath) {
-      image = sizeOf(this.resourcePath);
-      image.bytes = fs.statSync(this.resourcePath).size;
+    image = sizeOf(this.resourcePath);
+    image.bytes = fs.statSync(this.resourcePath).size;
   } else {
-      image = sizeOf(content);
-      image.bytes = content.byteLength;
+    image = sizeOf(content);
+    image.bytes = content.byteLength;
   }
 
   let outputPath = url;
