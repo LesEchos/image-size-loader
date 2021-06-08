@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npx --no-install tsc --project "tsconfig.development.json"
+npx --no-install lint-staged
