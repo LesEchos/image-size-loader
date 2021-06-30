@@ -1,0 +1,15 @@
+# Build
+dist/
+
+# Test
+coverage/
+
+# Dependency directories
+node_modules/
+
+# Misc
+.vscode/
+.husky/
+
+# Babel ES2015 export loader
+index.js
