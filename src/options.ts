@@ -11,8 +11,8 @@ export const SCHEMA: Parameters<typeof validate>[0] = {
   additionalProperties: true,
   properties: {
     name: {
-      description:
-        'The filename template for the target file(s) (https://github.com/webpack-contrib/file-loader#name).',
+      description: 'The filename template for the target file(s).',
+      link: 'https://github.com/webpack-contrib/file-loader#name',
       anyOf: [
         {
           type: 'string',
@@ -23,8 +23,8 @@ export const SCHEMA: Parameters<typeof validate>[0] = {
       ],
     },
     outputPath: {
-      description:
-        'A filesystem path where the target file(s) will be placed (https://github.com/webpack-contrib/file-loader#outputpath).',
+      description: 'A filesystem path where the target file(s) will be placed.',
+      link: 'https://github.com/webpack-contrib/file-loader#outputpath',
       anyOf: [
         {
           type: 'string',
@@ -35,8 +35,8 @@ export const SCHEMA: Parameters<typeof validate>[0] = {
       ],
     },
     publicPath: {
-      description:
-        'A custom public path for the target file(s) (https://github.com/webpack-contrib/file-loader#publicpath).',
+      description: 'A custom public path for the target file(s).',
+      link: 'https://github.com/webpack-contrib/file-loader#publicpath',
       anyOf: [
         {
           type: 'string',
@@ -47,23 +47,24 @@ export const SCHEMA: Parameters<typeof validate>[0] = {
       ],
     },
     postTransformPublicPath: {
-      description:
-        'A custom transformation function for post-processing the publicPath (https://github.com/webpack-contrib/file-loader#posttransformpublicpath).',
+      description: 'A custom transformation function for post-processing the publicPath.',
+      link: 'https://github.com/webpack-contrib/file-loader#posttransformpublicpath',
       instanceof: 'Function',
     },
     context: {
-      description:
-        'A custom file context (https://github.com/webpack-contrib/file-loader#context).',
+      description: 'A custom file context.',
+      link: 'https://github.com/webpack-contrib/file-loader#context',
       type: 'string',
     },
     emitFile: {
-      description:
-        'Enables/Disables emit files (https://github.com/webpack-contrib/file-loader#emitfile).',
+      description: 'Enables/Disables emit files.',
+      link: 'https://github.com/webpack-contrib/file-loader#emitfile',
       type: 'boolean',
     },
     regExp: {
       description:
-        'A Regular Expression to one or many parts of the target file path. The capture groups can be reused in the name property using [N] placeholder (https://github.com/webpack-contrib/file-loader#regexp).',
+        'A Regular Expression to one or many parts of the target file path. The capture groups can be reused in the name property using [N] placeholder.',
+      link: 'https://github.com/webpack-contrib/file-loader#regexp',
       anyOf: [
         {
           type: 'string',
