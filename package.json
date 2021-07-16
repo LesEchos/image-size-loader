@@ -1,6 +1,6 @@
 {
   "name": "@lesechos/image-size-loader",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "license": "Apache-2.0",
   "description": "An image size loader module for webpack",
   "keywords": [
@@ -39,6 +39,7 @@
     "lint-ts": "tsc --project 'tsconfig.development.json'",
     "prebuild": "npm run clean",
     "prepare": "husky install",
+    "prepublishOnly": "npm run build",
     "test": "jest"
   },
   "lint-staged": {
@@ -52,7 +53,7 @@
   "dependencies": {
     "image-size": "^1.0.0",
     "loader-utils": "^2.0.0",
-    "schema-utils": "^3.0.0"
+    "schema-utils": "^3.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",

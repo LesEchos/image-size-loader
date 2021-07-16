@@ -1,0 +1,8 @@
+# Test
+coverage/
+
+# Logs
+yarn-debug.log*
+
+# Misc
+.vscode/settings.json
